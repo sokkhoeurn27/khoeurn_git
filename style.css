@@ -1,0 +1,644 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(220, 226, 238);
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+
+}
+
+nav .logo {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+nav .donate-btn {
+    background: orange;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('./img/head/img6/photo_2025-04-11_17-46-28.jpg') no-repeat center center/cover;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    box-shadow: 1px 2px 8px gray;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay */
+}
+
+.hero-content {
+    margin-left: 90px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 1px 2px 8px rgb(189, 177, 177);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero h1:hover {
+    transform: translateY(-7px);
+    transition: .5s;
+}
+
+.hero h1 span {
+    color: orange;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: orange;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+.hero button:hover {
+    background: darkorange;
+}
+
+.section {
+    padding: 30px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pt2 img {
+    width: 500px;
+}
+
+.ab {
+    text-shadow: 1px 2px 5px gray;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ba {
+    background-color: rgb(221, 231, 231);
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 1px 5px 8px grey;
+    border-radius: 20px;
+
+}
+
+.pa {
+    font-size: 22px;
+}
+
+.vl {
+
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 2px 5px gray;
+}
+
+.values {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.value-box {
+    font-size: 16px;
+    width: 23%;
+    background: #e1eff1;
+    padding: 15px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 1px 2px 5px gray;
+
+}
+
+.value-box:hover {
+    transform: translateY(-7px);
+    transition: .5s;
+}
+
+.ct {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 2px 5px gray;
+}
+
+.sd {
+    font-size: 25px;
+    color: red;
+    text-shadow: 1px 2px 5px rgb(148, 130, 130);
+}
+
+.canteen,
+.menu,
+.sports {
+    margin-top: 40px;
+}
+
+table {
+
+    box-shadow: 2px 5px 8px gray;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+
+}
+
+td:hover {
+    background-color: #4CAF50;
+}
+
+th {
+    background-color: aqua;
+}
+
+table,
+th,
+td {
+    border: 1px solid #333;
+    text-align: center;
+    padding: 15px;
+}
+
+.mn {
+    font-size: 25px;
+    color: red;
+    text-shadow: 1px 2px 5px rgb(148, 130, 130);
+}
+
+.menu-items,
+.sports-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 22%;
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 1px 2px 5px gray;
+
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    transition: .5s;
+}
+
+.sp {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 2px 5px gray;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* contect */
+.cnt {
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 2px 5px gray;
+}
+
+.contact-section {
+    border: 1px solid black;
+    width: 60%;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.contact-header {
+    background-color: #d3d3d3;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.contact-description {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.contact-form {
+    padding: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #116b16;
+}
+
+/* google map */
+.maps1 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 2px 5px gray;
+}
+
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cont {
+    width: 50%;
+}
+
+.map {
+    box-shadow: 1px 2px 5px gray;
+
+}
+
+footer {
+    background-color: #cce7e6;
+    /* You can change this to PN color */
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    color: #cc0000;
+    /* PN Color */
+}
+
+.sports-items {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    width: 100%;
+}
+
+.sports-items .card img {
+    width: 100%;
+    height: 20vh;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    text-shadow: 1px 2px 5px rgb(216, 221, 203);
+    font-size: 13px;
+
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-column ul li a:hover {
+    color: #cc0000;
+    /* PN Color */
+    text-shadow: 1px 2px 5px rgb(216, 221, 203);
+}
+
+.note {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.note span {
+    font-size: 17px;
+    color: red;
+    /* PN Color */
+    text-shadow: 1px 2px 5px rgb(216, 221, 203);
+}
+
+/* Responsive */
+@media (max-width: 800px) and (min-width:748px) {
+    .hero {
+        background: url('./img/head/img6/photo_2025-04-11_17-46-28.jpg') no-repeat center center/cover;
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+        box-shadow: 1px 2px 8px gray;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .pa {
+        font-size: 13px;
+    }
+
+    .pt2 img {
+        width: 370px;
+    }
+
+    .value-box {
+        font-size: 10px;
+    }
+
+    .card {
+        margin: 10px;
+        padding: 10px;
+        width: 100%;
+        font-size: 11px;
+    }
+
+    .mi {
+        width: 160px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(1fr);
+    }
+
+    .cont {
+        width: 100%;
+        margin-left: 90px;
+    }
+
+
+}
+
+@media (max-width: 428px) and (min-width:368px) {
+    .hero {
+        background: url('./img/head/img6/photo_2025-04-11_17-46-28.jpg') no-repeat center center/cover;
+        height: 45vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+        box-shadow: 1px 2px 8px gray;
+    }
+
+    nav {
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    nav,
+    ul,
+    li {
+        font-size: 9px;
+
+    }
+
+    .donate-btn {
+        display: none;
+    }
+
+    .hero button {
+        margin-top: 10px;
+        padding: 7px 15px;
+        background: orange;
+        border: none;
+        color: white;
+        font-size: 12px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+
+    .hero h1 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .pa {
+        font-size: 11px;
+
+    }
+
+    .ba {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pt2 img {
+        width: 100%;
+    }
+
+    .value-box {
+        font-size: 7px;
+        width: 40%;
+    }
+
+    .values {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card .mi {
+        width: 100%;
+    }
+
+    .card {
+        font-size: 16px;
+    }
+
+    .menu-items {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    table,
+    th,
+    td {
+        font-size: 11px;
+        border: 1px solid #333;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .mi {
+        width: 120px;
+    }
+
+    .maps1,
+    .cnt,
+    .sp,
+    .mn,
+    .ab,
+    .vl,
+    .ct {
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 1px 2px 5px gray;
+    }
+
+    .sports-items {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .sports-items .card img {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .maps {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cont img {
+        margin-right: 200px;
+        width: 100%;
+        box-shadow: 1px 2px 5px gray;
+    }
+
+    iframe {
+        padding: 50px;
+        width: 100%;
+        height: 30vh;
+
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(1fr);
+    }
+
+    .footer-column h3 {
+        padding: 0%;
+        font-size: 11px;
+        margin-bottom: 13px;
+        color: #cc0000;
+    }
+
+    .footer-column li {
+        font-size: 10px;
+    }
+
+    .note span {
+        font-size: 12px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(1fr);
+    }
+
+}
