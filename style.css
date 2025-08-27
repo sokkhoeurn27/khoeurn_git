@@ -217,12 +217,13 @@ td:hover {
 th {
     background-color: rgb(7, 114, 114);
     color: white;
+    
 }
 
 table,
 th,
 td {
-    border: 1px solid #333;
+    border: 01px solid #9eabac;
     text-align: center;
     padding: 15px;
 }
