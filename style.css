@@ -211,11 +211,12 @@ table {
 }
 
 td:hover {
-    background-color: #4CAF50;
+    background-color: #1f9999;
 }
 
 th {
-    background-color: aqua;
+    background-color: rgb(7, 114, 114);
+    color: white;
 }
 
 table,
